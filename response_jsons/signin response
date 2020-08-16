@@ -1,0 +1,28 @@
+
+SignIn Response:  CognitoUser {
+  "Session": "aUt0vFz11llZ5H_r5f_BpA1a2lMSdWjJ-egVwj3YUtWnAjGxVQoghaYEWqm9KB8XJ14qpEUSo3MTRablgDbhPjghVakVz7J7O03panHev-phaG86XSASMZzdaEWq8ykRb9GodjgPsVn0wO5ra8_n3B0UvjTvx9Qz-GWUdFqk3TRMGKA1srLHYtM9po4U_NN3-8ayeLaGsqRTNjJvibRBTuSaN-fYMqLKOFIZbQKeEF3sQOZjewP76FGN3rwtoxAbcgrDy4Yqnmr6K26NAW8O3QRxJaQziW8yVw3CB3gxkZc0OX1jT8MMHyJCMhn0nSq0AOCi7Zi8kke6piLyqG0wPOCPDdeqaWG3mvUWF93oNh0m-p3vhBlW7qoeje5U4ak4dznNGtyXDfjNl33WIO2maTnaidsf2u4Mcy2JjXq93RpZpmkbeBnnRTEvZwn5d987513t0ZGMLrDzBBIGchHPAL-lITUsgocH_0QzI-TpWxwwuenm0Xa9u7JP7nlairVIfC9rmI2ezuUTk293rF2R9eWAGQ6uB8x2iuSPyW4ww8SU7ldQrkul1Eew7t8GaNbzqF-A8nYgc-eHyxClXIIhXTiVpFlgGAOQ0RNcuStYcIQcoYahFan4RzDv7n1jNiUtzlBPD0DssObwewWnPow2hwKqkr_TCiyjfsAho0A8HVAJ3vFDxSIgjiPwbnk50vLciP_Ii2jlV-Uqoe-BVnwD061-ImDkMk-w6SkQaCSjCm0HpYJ2XGM7C-6AfLU8GrdRXbSeiOrhLWu3Wq2KcLW47F1vX51KBq9gk53-bopOUnIi6RWdAUiOf5c7w39IwLSWIPvftUp44dHptyyseSuof4YSFzVb4qpyZED59jVxriSJrD3I5ncOzpMXVdf02C-LzTFieJnbpB3Bv6K_xrhNiiH1ADI6-a_4TfBebSFcX71j94xowBS4anrxKfJ8QE-IYJWWRG-CeH-ycWMRZ3T2ewXWYlBB2zoPMjfO9aaRBuNxdw2QcOjJS4ZlKJQLUuiKCreYJeJs-gCLNYtb9zwzO5bA2ujeG-4CyIiEKb8ZcPfpcP_QgoClwwaMwIELoQBROVayaw",
+  "authenticationFlowType": "CUSTOM_AUTH",
+  "challengeName": "CUSTOM_CHALLENGE",
+  "challengeParam": Object {
+    "USERNAME": "c9c85a6e-ac2d-46e7-a800-b03b3641c241",
+  },
+  "client": Client {
+    "endpoint": "https://cognito-idp.us-east-2.amazonaws.com/",
+    "fetchOptions": Object {},
+  },
+  "keyPrefix": "CognitoIdentityServiceProvider.5f14fu1ec3in8md823gj1366fe",
+  "pool": CognitoUserPool {
+    "advancedSecurityDataCollectionFlag": true,
+    "client": Client {
+      "endpoint": "https://cognito-idp.us-east-2.amazonaws.com/",
+      "fetchOptions": Object {},
+    },
+    "clientId": "5f14fu1ec3in8md823gj1366fe",
+    "storage": [Function MemoryStorage],
+    "userPoolId": "us-east-2_X2PEdOx6k",
+  },
+  "signInUserSession": null,
+  "storage": [Function MemoryStorage],
+  "userDataKey": "CognitoIdentityServiceProvider.5f14fu1ec3in8md823gj1366fe.+918609264931.userData",
+  "username": "+918609264931",
+}
