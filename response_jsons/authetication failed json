@@ -1,0 +1,72 @@
+first invalid attempt response 
+
+- Authenticate Response:  CognitoUser {
+  "Session": "9MJD1Vp8ASCdQN3oax30Wt1tQXDgX0Rw6I1PZA2mVfAKAowYEfFU3UeZ2DTKLxyNX6ao-SAdl1ZRTvhEMee64_-Uui_itSewh_xSVFirUDiV_xeuaJa7C8M1ZRbsWVEXlRFLEvr4xHur9S4btTRagQzFJBWUJXcrZuiccpMH-5B3dpNm00hgm1tBEN6IPCZKMS0pg0oQex6-oqKSxpMkadb7vhsj7N1WQwLvaQnwgFrg_nzmsC-KTRPqdtsoJgUIEMmib5siCYMXLiuVeUVKlf68aAccJJn38yUDq5940wgJTUqT3SP3D76MyUdnacey5g5rYYmVl8V10oSiGoZwml_insdHwhW0u5yjA_kPQ7AkF6YmG-DvvqP7Wh-b0AgDSeWbbUV8HXnBdh99ymoNoexcDgHehauSV4giQ29Dw2CwARfQ__-w7Kp3Y_AQx1CN8APe07KHTH9CgRGV-HZ-umX5nSRzvILRIP9mW8t5AhZsCpFN7_xVI9PQArcEADBBOoEbKGiikAie3upz48aYp034gSVxNdiKZRkM_m_WGnA8TGlfAQoq4LMzgl5ZQ8mX2ckfp7BFwJw3pmpLPMPCmRKpB96FaZEQT4J-CprgwQVlcdgx6mxiOTq0Ekm497qmo5koZPjlvN6L4Sbp_4aJC4uo_W4HYzCX-r_REQh5NDxIZpx8bOJ4hRmHQQxF0-VrPeCQzfM01hSUwB5jMI8EC-lY5GLE6T86iIl2YCLqa4QfoUCquDCmDlo97q2MDlVeBZZsGa0-nDJ5jJHivJ7jw6oI2kIMV6StrO7sRWasJ9Z9f8GPHrrs30J3ARLsPYs2IHsscI46MrmZVrBdNBkgoTecgWHhITan7lKVI3UQz5tUJF9r9g_q8kMF_6Q1guDG5lZbC7Qi52NaFXoa60mMYwi-dx0maLMJWm9h8u1YkVYE8x_rPzlSsaCkLpLKLPUFClK6eRGK_hRJHFFXqxcsPOHB6SwqyoKWgft__fEVT9juKxBi9HVypO0P8RCkpopbbjt6S4RsmlGcrfN9ndJCK2QDf18SKo0qHmCpCDC85iErBck3UmocNctyhvzYX_sR8XId-zWsQ8AVq9lEf5czlVzVhIEux4FqY9dLrunSU8yTZd--nX1Rsr5hOAPHGRAMYbpiXgRLQZdpNDYROLfFxww5c_Qu1RUjNgSz7sSxCtLYMiI4lQ2EDz9pkuj-av7aI_wZZA",
+  "authenticationFlowType": "CUSTOM_AUTH",
+  "challengeName": "CUSTOM_CHALLENGE",
+  "challengeParam": Object {},
+  "client": Client {
+    "endpoint": "https://cognito-idp.us-east-2.amazonaws.com/",
+    "fetchOptions": Object {},
+  },
+  "keyPrefix": "CognitoIdentityServiceProvider.663srv7u3qe6ggokcm8eutl45b",
+  "pool": CognitoUserPool {
+    "advancedSecurityDataCollectionFlag": true,
+    "client": Client {
+      "endpoint": "https://cognito-idp.us-east-2.amazonaws.com/",
+      "fetchOptions": Object {},
+    },
+    "clientId": "663srv7u3qe6ggokcm8eutl45b",
+    "storage": [Function MemoryStorage],
+    "userPoolId": "us-east-2_2ZTlNXVJF",
+  },
+  "signInUserSession": null,
+  "storage": [Function MemoryStorage],
+  "userDataKey": "CognitoIdentityServiceProvider.663srv7u3qe6ggokcm8eutl45b.+919820810814.userData",
+  "username": "+919820810814",
+}
+
+
+second failed  -
+
+Authenticate Response:  CognitoUser {
+  "Session": "Ulc0tMZL-DSBi1oubpdf6l4b6ethrfW8WPTp-K0a641RMUNcbXJG_6rRIDNftE0nKHnrt4_GhovOE74Kp6zkGfRtCb7dnGauRYSXDj_2qhcy-b_oHAaM4uE0KQSubE-hoaF9UqXTeccRjh_lp4qOTAkcnRiuK7cYowJ77IPF2v0-sauij0isew8LR8L_GCmBn8aozALzjy4Smz0uFqGvGifMc9k6IdPRWDJ0YzKa_VTC_b6uhLdf3z6nshW2A0NBXsegxvFlO4LEJwyRLghCRbPYDh_RItHe-9nN_F7uCsNvEmV2Vkr22L_sF5GCF5zVjf_o__AE0bJ5ZMcYZrY43fbb73NcQgHSIiBFC48MTqAPIn0hgT5hhnJCVLTYvifutPnPFbURft0wiTAIyYMekApySjlI1xQsOue6rfsty2GYDtQveUK-kSmiwYCYnfVqpXrzFs2eLtZkNjo6IJ2f-9ox-7lFaec_lUoltDFsXiuO5PHl0F2_R7iXts_6rX9XJKleL-nhGLiVmGfIi0gaAz8pxbvpaSHRtPoCU_e4BtDglgU4MmcsHCA6yxXulD6zxlZUGKoyYz2jDL5cg3kol8lAmklrHZ3wFbQDBOPVztCa8BF9DbuvD50015uO-nsnu2gADzowqRSOUn3mtI62oBjOR-ucwNPJ26OdiHdNo9s_QRE3IKWQU6Yl8JUeDiiz6RFRaUC21n9kdhTZ-G-OvYj065uUCvmVMKz2a2ZVk0k2AKqIBpeux3WTy5-5qZLQ7DSVCAmi_q6WmbPoC4B6JORLqb6Wt9gFa-vu94uEssRTxSJVk_TaJAMSULe-fUJPS5Kw38GVf683Nb6JMWbiB53GnVhoL6x41wapbXDJUUOF_fJvJQr262EGGub9ZUuPj9Jo2w47qsDOc26kSi0Hr7o0oHSx8yTCOrPntmhjCb3tzlacdMBCSpVOo0W2a6XfgVZ-VuTu5jTR_bDg_vAJCcTVvsScJAbZdDVGACaFa_-ILwvn-S-hlGpVcBuQhMMsRCtwRHi1yfjmg9iI6lS766IrJ6WZu0RVWtj3aEuYWgnDKstuAb7msV_VU4lYZ0kjaQoKaefsaqNLwIINJj3V335qMcMh2-MU5at5qez1y6G0ilbvfn-rktom33vUVR1neUHo_FdldRzzzeOZ1mIv6j9-tgw1vjGTWL10hbgG95lK3fwhuoIkShVa6fsZnM1Up_bVNgMDBKT0tbH5UtSLXQ",
+  "authenticationFlowType": "CUSTOM_AUTH",
+  "challengeName": "CUSTOM_CHALLENGE",
+  "challengeParam": Object {},
+  "client": Client {
+    "endpoint": "https://cognito-idp.us-east-2.amazonaws.com/",
+    "fetchOptions": Object {},
+  },
+  "keyPrefix": "CognitoIdentityServiceProvider.663srv7u3qe6ggokcm8eutl45b",
+  "pool": CognitoUserPool {
+    "advancedSecurityDataCollectionFlag": true,
+    "client": Client {
+      "endpoint": "https://cognito-idp.us-east-2.amazonaws.com/",
+      "fetchOptions": Object {},
+    },
+    "clientId": "663srv7u3qe6ggokcm8eutl45b",
+    "storage": [Function MemoryStorage],
+    "userPoolId": "us-east-2_2ZTlNXVJF",
+  },
+  "signInUserSession": null,
+  "storage": [Function MemoryStorage],
+  "userDataKey": "CognitoIdentityServiceProvider.663srv7u3qe6ggokcm8eutl45b.+919820810814.userData",
+  "username": "+919820810814",
+}
+
+third failedd ---
+
+Challenge Error Object {
+  "code": "UserLambdaValidationException",
+  "message": "DefineAuthChallenge failed with error Invalid OTP.",
+  "name": "UserLambdaValidationException",
+}
+
+forceful 4th attempt --- 
+
+Challenge Error Object {
+  "code": "NotAuthorizedException",
+  "message": "Invalid session for the user.",
+  "name": "NotAuthorizedException",
+}

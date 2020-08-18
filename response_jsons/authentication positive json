@@ -1,0 +1,66 @@
+Authenticate Response:  CognitoUser {
+  "Session": null,
+  "attributes": Object {
+    "phone_number": "+918609264931",
+    "phone_number_verified": true,
+    "sub": "492055fa-a00b-4945-9174-676185304f7f",
+  },
+  "authenticationFlowType": "USER_SRP_AUTH",
+  "client": Client {
+    "endpoint": "https://cognito-idp.us-east-2.amazonaws.com/",
+    "fetchOptions": Object {},
+  },
+  "keyPrefix": "CognitoIdentityServiceProvider.663srv7u3qe6ggokcm8eutl45b",
+  "pool": CognitoUserPool {
+    "advancedSecurityDataCollectionFlag": true,
+    "client": Client {
+      "endpoint": "https://cognito-idp.us-east-2.amazonaws.com/",
+      "fetchOptions": Object {},
+    },
+    "clientId": "663srv7u3qe6ggokcm8eutl45b",
+    "storage": [Function MemoryStorage],
+    "userPoolId": "us-east-2_2ZTlNXVJF",
+  },
+  "preferredMFA": "NOMFA",
+  "signInUserSession": CognitoUserSession {
+    "accessToken": CognitoAccessToken {
+      "jwtToken": "eyJraWQiOiI2R2ZlTHVDS3I2aXp0WnJIeVNyMFJDamZwNkF4MUd3cXFsVERiMmUyTnBvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI0OTIwNTVmYS1hMDBiLTQ5NDUtOTE3NC02NzYxODUzMDRmN2YiLCJldmVudF9pZCI6ImE3ZTU1YmZmLWNkZjktNDRjZi04ZGU2LWQ0MGVkODdkZWVkYSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE1OTc2Nzk1MTQsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTIuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0yXzJaVGxOWFZKRiIsImV4cCI6MTU5NzY4MzExNCwiaWF0IjoxNTk3Njc5NTE0LCJqdGkiOiJjZTBmMmUxNy0wZDY0LTRkOTMtOTk2MS0zZjJlNTNlOGQ4NGIiLCJjbGllbnRfaWQiOiI2NjNzcnY3dTNxZTZnZ29rY204ZXV0bDQ1YiIsInVzZXJuYW1lIjoiNDkyMDU1ZmEtYTAwYi00OTQ1LTkxNzQtNjc2MTg1MzA0ZjdmIn0.UI_zzUSscRgYDX3MaLvbpwR8d0VsPu1SNJpBekyouNPaFcqF9-vwvAj-A7y54cY7N3pw9mubw0bal--1FIQgV5cKh8a8p5xZcdbjy7yuPOs3Nq7BhSto0RZ7GQGOZoVoFhOUvIwYvPa9cgZyku6s4V6lCvoFmWAJIJa8q-gidyzM8LyPUoJRHmFALXKf9mK2BilVK_Upo5dvROdZxzSJ0I0qCRkoc9AfuC2ptKijk9xWnOFgGr6Rqv5U9MmAB3ZoLGcp6v1_9C7EJwdAdbbwnJN383xgpKES427umPxTi-SfIDt8_Pg04p8glxZ4JPupQdlMu_lSgy4PjGQ9Di0SlQ",
+      "payload": Object {
+        "auth_time": 1597679514,
+        "client_id": "663srv7u3qe6ggokcm8eutl45b",
+        "event_id": "a7e55bff-cdf9-44cf-8de6-d40ed87deeda",
+        "exp": 1597683114,
+        "iat": 1597679514,
+        "iss": "https://cognito-idp.us-east-2.amazonaws.com/us-east-2_2ZTlNXVJF",
+        "jti": "ce0f2e17-0d64-4d93-9961-3f2e53e8d84b",
+        "scope": "aws.cognito.signin.user.admin",
+        "sub": "492055fa-a00b-4945-9174-676185304f7f",
+        "token_use": "access",
+        "username": "492055fa-a00b-4945-9174-676185304f7f",
+      },
+    },
+    "clockDrift": 1,
+    "idToken": CognitoIdToken {
+      "jwtToken": "eyJraWQiOiJYT0JGUlFJbUdpakZiOGl6QmFaUE83c3FreFFFNm9zTnF2NHhVcW44K1MwPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI0OTIwNTVmYS1hMDBiLTQ5NDUtOTE3NC02NzYxODUzMDRmN2YiLCJhdWQiOiI2NjNzcnY3dTNxZTZnZ29rY204ZXV0bDQ1YiIsImV2ZW50X2lkIjoiYTdlNTViZmYtY2RmOS00NGNmLThkZTYtZDQwZWQ4N2RlZWRhIiwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE1OTc2Nzk1MTQsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTIuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0yXzJaVGxOWFZKRiIsInBob25lX251bWJlcl92ZXJpZmllZCI6dHJ1ZSwiY29nbml0bzp1c2VybmFtZSI6IjQ5MjA1NWZhLWEwMGItNDk0NS05MTc0LTY3NjE4NTMwNGY3ZiIsInBob25lX251bWJlciI6Iis5MTg2MDkyNjQ5MzEiLCJleHAiOjE1OTc2ODMxMTQsImlhdCI6MTU5NzY3OTUxNH0.AY_Z57TNDzuhgfGbZXS4_O3uFIHcS0dBOM8ItmB41sSLgKtzhb2GYDjoqZWqp-MWRftZjdymct9L4HE0Ul0vT4I27-AFHw21_d4GIou4pRm51DNDmB57X8kcds15Q0wi5tknfgky46y0kXcBWTPa4Dkoo_1tTpIJ30YkS9jk3-Gmx1FmhZqmXdw80EkFhrFbikYFcZtfkJdhxoo8u0-ATw4nQbWRGWqD5UN1X9pQKV1UOWX9KPywxIwegHRDjs-3cTT7ZHXEKGMJEVkpQkCIB2cfSjnrsH8oiB9jJV3YjBz1bf8plvEjtX3bne5x6lGmWN7QGJ7We_RLeZUq0Yaj9A",
+      "payload": Object {
+        "aud": "663srv7u3qe6ggokcm8eutl45b",
+        "auth_time": 1597679514,
+        "cognito:username": "492055fa-a00b-4945-9174-676185304f7f",
+        "event_id": "a7e55bff-cdf9-44cf-8de6-d40ed87deeda",
+        "exp": 1597683114,
+        "iat": 1597679514,
+        "iss": "https://cognito-idp.us-east-2.amazonaws.com/us-east-2_2ZTlNXVJF",
+        "phone_number": "+918609264931",
+        "phone_number_verified": true,
+        "sub": "492055fa-a00b-4945-9174-676185304f7f",
+        "token_use": "id",
+      },
+    },
+    "refreshToken": CognitoRefreshToken {
+      "token": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.lWp3yxZYpwMiVyCHxpSe13-LATfFXhk34j3pLq7sjPev2C1ML0jr1FmxWdl0LpysKuGjkpS4U4ee9zHuG1qLo5gtJFYexR7xkKw_CCAI70qNw-VF2L-ZHgmbMgvNGYw3g4KZmbnIVEFRbPBzZudMUgqYZcJMhvmHokhs9eUO3FOHcZTnLLmqUnHsWMhydC1aN4S1-NBseNKzlbmsANr_Aiz0IBGt-ExUdFpc_RBnRwvqB8KGFtoQwUYteiOk-vASAkTFM9TA1sGo6lyNp757HQJjZnBBPvSLJzcY7iQ4iihbutpGgIKpaLbchM2Suf2-pJ5ng0RQ6advHsBuoYV2kg.66e4gU40O0fh6y7f.wdpzplXsiMVOsa151NYSdRr2kbVJFdCOfFcPtHrE0KNAmekVobM8hpbberDt28mn6r4Q84FIlhEnALdfjliM3oSOCNqtmiKOzTLC8-k2bPpq1TE-ieKWK6vMx_2Jk1WNOEo1wzFuNz1zsoK4gyuwGnfwoX7c_yo0lduskQPlVpmvWuF4vu6KX6VsRYjp5I-3S8T_3fy_CJ-EJ9YALqR2Hf8B57JtLeGRoKnci8rw5c5QfcqgZMeP4ituv4qUh27ExbIe-4-_BzZCtM2yURSwYIzxjOhzcdHT6gtmKo9tWOHdvrmzUpD770BkTIxqd9SuPsGvxkH1edmv-MrEWElh39AExJMKZxjGvq6pnyMNnzc6LbA8H1XT5UFIVxs7JvtbKc4TIoe8uLikR_z4Au8dzJf04-eNqwZHedxJ7JPbjr9yZm6DDzd0au9AzRQgOGfOxWCYZgQGU379TJpvfKK6wHkgAZLRvzsUMvh66FvWZELpL9kdUPYNykxo1j85INn6GdCU5EwtPfBf_RdIfEgBBp4YI1o2k4-j2OaYx4Bljk9gSQWXVBxMEKb50pYhXHbgYngIHoIL1vaRRw_v2ZS9pIgPi-YVTKGxilpaOeKM5J7YOs4BFpRk7a1Cbf241J-VKgl2yXgv6upVSoV991fegLqrYe4PpISLSNce1CCUQtucjHWQxY3KhR4Ad2kmkeiBBPUXSbs3iVLOcX3Rii7Z6XJmp1YlWt8kNV0gx7ZgEy6WOOFHkEJg6iZlzS7STpoNKIldw5mFVP5dSoEjsAuAtVUmL9MmC9R0GG82U-E7WCMsuMmYbKeM4VqSHYgS9GpZyLFcLKTRVymiiVxj1Sa0IVw8j1bYhr5gOcyOcZOOn8hBEgwGML8AqXG0p8bhWgO3LaxFsOJWeV2uXb2rx5r5yLE6DwU51mJUvDt7NHFof0FULcIPyehKwEmggFZjqE531VoOHlGSGcPOJAoEy9qltoRU_z9wI7NdIwQZSoFwBlc73xcd5Qmrdf3KeIKDBrgIjDliQX7TJXUhbGJL9kJYmS9W8JJENTHkyknJVBrN4C56I3JDjDWuTXAbYRZ8tdz3ov8aoO5uiTlDxdrdGfn91EBR3uv28hqdu1HdpMFWy8AAGDnk_ELrHdaHUB-ZK9DzAPfB3LTdtLaFScnRQOgtg2YWCCEqOP-wRls2s7_5kSwNMJCwm1cJI7V_X87GchGj2BPuy0EccbKnSVBcuKL9L3TD3bIVBkrTila0AgkApDfHPcxn1e5q8sx-esRlQ9nCyd60IT1HZPumPXZqDpdEMli08UKceLlSLwdYgmEkRyvvnKbBlO-YpXLcUQ.yGYMMIE8-N8t7my7XB3pTQ",
+    },
+  },
+  "storage": [Function MemoryStorage],
+  "userDataKey": "CognitoIdentityServiceProvider.663srv7u3qe6ggokcm8eutl45b.+918609264931.userData",
+  "username": "+918609264931",
+}

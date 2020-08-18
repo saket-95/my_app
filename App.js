@@ -4,29 +4,28 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Amplify, { Auth, Hub, Logger } from "aws-amplify";
 
+//main app screens
 import HomeStackScreen from "./navigation1/homeStackScreen.js";
 import ProfileStackScreen from "./navigation1/profileStackScreen.js";
 import CartStackScreen from "./navigation1/CartStackScreen";
+
+//authentication screens
 import LoginScreen from "./screens1/loginScreen.js";
 import OtpScreen from "./screens1/OtpScreen.js";
 import SignupScreen from "./screens1/signupScreen.js";
 
 import { AuthContext } from "./components1/context";
+import awsconfig from "./aws-exports.js";
 
-const Tab = createBottomTabNavigator();
+const HomeTab = createBottomTabNavigator();
 const AuthTab = createBottomTabNavigator();
 
-Amplify.configure({
-  Auth: {
-    userPoolId: "us-east-2_X2PEdOx6k",
-    userPoolWebClientId: "5f14fu1ec3in8md823gj1366fe",
-    authenticationFlowType: "CUSTOM_AUTH",
-  },
-});
+Amplify.configure(awsconfig);
 
 export default function App() {
   const [data, setData] = React.useState({
-    username: null,
+    CognitoUser: null,
+    isAuthenticated: false,
   });
 
   const authContext = React.useMemo(
@@ -35,22 +34,19 @@ export default function App() {
         await Auth.signIn(`+91${credential.phone_no}`)
           .then((signInUser) => {
             console.log("SignIn Response: ", signInUser);
-            setData({ username: signInUser });
-            // this.toppopup.instance.show();
+            setData({ CognitoUser: signInUser, isAuthenticated: false });
           })
           .catch((error) => {
             console.log("SignIn Error: ", error);
           });
       },
       authenticate: async (credential) => {
-        console.log("sending param 1", data.username);
-        console.log("sending param 2", credential.signInCode);
-        Auth.sendCustomChallengeAnswer(data.username, credential.signInCode)
+        Auth.sendCustomChallengeAnswer(data.CognitoUser, credential.signInCode)
           .then((response) => {
             console.log("Authenticate Response: ", response);
           })
           .catch((error) => {
-            console.log("Challenge Error", error);
+            console.log("Authenticate Error", error);
           });
       },
       signUp: async (credential) => {
@@ -60,22 +56,23 @@ export default function App() {
         })
           .then((signup) => {
             console.log("SignUp Response: ", signup);
-            //this.showSnackbar(`Awesome! Signup was Success `, "success");
           })
           .catch((error) => {
             console.log("SignUp Error: ", error);
-            //this.showSnackbar(`Something went wrong! `, "danger");
           });
       },
+      ComeBackFromOTP: async () => {
+        setData({ CognitoUser: null, isAuthenticated: false });
+      },
     }),
-    []
+    [data]
   );
 
   return (
     <AuthContext.Provider value={authContext}>
       <NavigationContainer>
-        {false ? (
-          <Tab.Navigator
+        {data.isAuthenticated ? (
+          <HomeTab.Navigator
             screenOptions={({ route }) => ({
               tabBarIcon: ({ focused, color, size }) => {
                 let iconName;
@@ -98,12 +95,12 @@ export default function App() {
               inactiveTintColor: "gray",
             }}
           >
-            <Tab.Screen name="Home" component={HomeStackScreen} />
-            <Tab.Screen name="Profile" component={ProfileStackScreen} />
-          </Tab.Navigator>
+            <HomeTab.Screen name="Home" component={HomeStackScreen} />
+            <HomeTab.Screen name="Profile" component={ProfileStackScreen} />
+          </HomeTab.Navigator>
         ) : (
           <AuthTab.Navigator>
-            {data.username === null ? (
+            {data.CognitoUser === null ? (
               <AuthTab.Screen name="Login" component={LoginScreen} />
             ) : (
               <AuthTab.Screen name="Login" component={OtpScreen} />
