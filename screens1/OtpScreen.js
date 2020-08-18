@@ -17,8 +17,6 @@ import { useTheme } from "react-native-paper";
 
 import { AuthContext } from "../components1/context";
 
-// import Users from '../model/users';
-
 const SignInScreen = ({ navigation }) => {
   const [data, setData] = React.useState({
     username: "",
@@ -33,24 +31,6 @@ const SignInScreen = ({ navigation }) => {
 
   const { authenticate } = React.useContext(AuthContext);
   const { ComeBackFromOTP } = React.useContext(AuthContext);
-
-  const textInputChange = (val) => {
-    if (val.trim().length >= 4) {
-      setData({
-        ...data,
-        username: val,
-        check_textInputChange: true,
-        isValidUser: true,
-      });
-    } else {
-      setData({
-        ...data,
-        username: val,
-        check_textInputChange: false,
-        isValidUser: false,
-      });
-    }
-  };
 
   const handlePasswordChange = (val) => {
     if (val.trim().length >= 8) {
@@ -73,20 +53,6 @@ const SignInScreen = ({ navigation }) => {
       ...data,
       secureTextEntry: !data.secureTextEntry,
     });
-  };
-
-  const handleValidUser = (val) => {
-    if (val.trim().length >= 4) {
-      setData({
-        ...data,
-        isValidUser: true,
-      });
-    } else {
-      setData({
-        ...data,
-        isValidUser: false,
-      });
-    }
   };
 
   const goBack = () => {
