@@ -25,7 +25,7 @@ Amplify.configure(awsconfig);
 export default function App() {
   const [data, setData] = React.useState({
     CognitoUser: null,
-    isAuthenticated: false,
+    userSession: null,
   });
 
   const authContext = React.useMemo(
@@ -34,7 +34,10 @@ export default function App() {
         await Auth.signIn(`+91${credential.phone_no}`)
           .then((signInUser) => {
             console.log("SignIn Response: ", signInUser);
-            setData({ CognitoUser: signInUser, isAuthenticated: false });
+            setData({
+              CognitoUser: signInUser,
+              userSession: signInUser.signInUserSession,
+            });
           })
           .catch((error) => {
             console.log("SignIn Error: ", error);
@@ -43,6 +46,10 @@ export default function App() {
       authenticate: async (credential) => {
         Auth.sendCustomChallengeAnswer(data.CognitoUser, credential.signInCode)
           .then((response) => {
+            setData({
+              CognitoUser: response,
+              userSession: response.signInUserSession,
+            });
             console.log("Authenticate Response: ", response);
           })
           .catch((error) => {
@@ -61,8 +68,17 @@ export default function App() {
             console.log("SignUp Error: ", error);
           });
       },
+      signOut: async () => {
+        Auth.signOut().then((data) => {
+          setData({
+            CognitoUser: null,
+            userSession: null,
+          });
+          console.log("SignOut Response: ", data);
+        });
+      },
       ComeBackFromOTP: async () => {
-        setData({ CognitoUser: null, isAuthenticated: false });
+        setData({ CognitoUser: null, userSession: null });
       },
     }),
     [data]
@@ -71,7 +87,7 @@ export default function App() {
   return (
     <AuthContext.Provider value={authContext}>
       <NavigationContainer>
-        {data.isAuthenticated ? (
+        {data.userSession !== null ? (
           <HomeTab.Navigator
             screenOptions={({ route }) => ({
               tabBarIcon: ({ focused, color, size }) => {

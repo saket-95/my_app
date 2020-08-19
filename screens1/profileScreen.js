@@ -5,7 +5,11 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { StyleSheet, Text, View, Button } from "react-native";
 import { ScreenStack } from "react-native-screens";
 
+import { AuthContext } from "../components1/context";
+
 const ProfileScreen = ({ navigation }) => {
+  const { signOut } = React.useContext(AuthContext);
+
   return (
     <View style={styles.container}>
       <Text>"Profile Screen"</Text>
@@ -13,6 +17,7 @@ const ProfileScreen = ({ navigation }) => {
         title="Go to Details"
         onPress={() => navigation.navigate("Details")}
       />
+      <Button title="SignOut" onPress={() => signOut()} />
     </View>
   );
 };

@@ -25,7 +25,7 @@ const MenuScreen = ({ navigation }) => {
       fetch(getURL)
         .then((response) => response.json())
         .then((json) => {
-          console.log(json);
+          //console.log(json);
           setData(json);
         })
         .catch((error) => console.log(error))
